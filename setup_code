@@ -1,0 +1,54 @@
+# Download & Install git on ubuntu
+----------------------------------------------------------------------------------------
+sudo apt-get install git	# install git on ubuntu system
+git --version			# check the installed git version
+
+
+# Setup and Config your github account on ubuntu
+----------------------------------------------------------------------------------------
+git config --global user.name "Your Github Username"
+git config --global user.email "Your Registered Email Address"
+
+git config --list		# check your current configration on git
+
+
+# Create Workspace folder and clone file from github repositories
+----------------------------------------------------------------------------------------
+mkdir git_workspace		# Create a folder called "git_workspace" in /home
+
+cd git_workspace
+
+git clone http://.... 		# Clone file from github repositories
+
+ls 				# check what file has cloned
+
+cd "Repository Name"		# Example: cd turtlebot3_simulation
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Create file
+touch "File Name"		# Example: touch HelloWorld.cpp
+
+# Edit Script
+gedit "File Name"		# Example: gedit HelloWorld.cpp
+
+# Check Status of the repository 
+(To check if anythings is different between repository and your local workspace)
+git status
+
+
+git add "File Name"		# Example: git add HelloWorld.cpp
+git status
+
+
+git commit -m " "Add Comment" " " File Name"
+# Example: git commit -m "First Change in HelloWorld.cpp by Frank" HelloWorld.cpp
+
+git push -u origin master
+
+
+
+
+
+
